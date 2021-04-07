@@ -1,0 +1,26 @@
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex ;
+}
+@mixin align-items($align) {
+    -webkit-align-items: $align;
+    -moz-align-items: $align;
+    -ms-align-items: $align;
+    -ms-flex-align: $align;
+    align-items: $align;
+}  
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+@mixin rotate($deg...){
+    -moz-transform:    rotate($deg);
+    -o-transform:      rotate($deg);
+    -webkit-transform: rotate($deg);
+    transform:         rotate($deg);
+}
